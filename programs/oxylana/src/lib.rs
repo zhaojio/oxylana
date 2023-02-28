@@ -1,15 +1,27 @@
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("EwmnkMvCVnCJt99M6K74NoSVSFCiSuceXMi2KeEYg1iD");
 
 #[program]
 pub mod oxylana {
     use super::*;
 
-    pub fn sign_demo(ctx: Context<SignDemo>) -> Result<()> {
+    pub fn sign_demo(ctx: Context<SignDemo>) -> Result<(String, usize)> {
         ctx.accounts.rust_station.oxidized = true;
-        Ok(())
+        Ok(("hello".to_string(), 0))
     }
+
+    pub fn flip(ctx: Context<Flip>) -> Result<(String, usize)> {
+        ctx.accounts.rust_station.oxidized = false;
+        msg!("flip xxxxxxxx");
+        Ok(("hello flip oooooo 中文".to_string(), 100))
+    }
+}
+
+#[derive(Accounts)]
+pub struct Flip<'info> {
+    #[account(mut)]
+    pub rust_station: Account<'info, RustStation>,
 }
 
 #[derive(Accounts)]

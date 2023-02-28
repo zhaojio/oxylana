@@ -2,14 +2,14 @@
 seeds = false
 skip-lint = false
 [programs.localnet]
-oxylana = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+oxylana = "EwmnkMvCVnCJt99M6K74NoSVSFCiSuceXMi2KeEYg1iD"
 
 [registry]
-url = "https://api.apr.dev"
+url = "http://localhost:8899"
 
 [provider]
 cluster = "Localnet"
-wallet = "oxyzEsUj9CV6HsqPCUZqVwrFJJvpd9iCBrPdzTBWLBb.json"
+wallet = "/home/zhaojie/.config/solana/id.json"
 
 [scripts]
 test = "cargo test -- --nocapture"

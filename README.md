@@ -1,3 +1,13 @@
+
+切换工作环境 13：09 2h
+配置代理服务器
+
+使用solana_client_wasm 读取数据
+测试使用Vec保存数据
+新建项目 重命名项目名称
+测试本地节点的访问速度
+
+
 # oxylana
 ### Full Stack Solana Development in Rust
 This repository provides a template for a Solana application with a full Rust stack. The repository includes
@@ -27,3 +37,5 @@ The use of localnet is hardcoded into the template; be sure to switch your walle
 ### Learn More
 
 Visit the Dioxus, Trunk, and Anchor docs/repositories to learn more.
+
+oxyzEsUj9CV6HsqPCUZqVwrFJJvpd9iCBrPdzTBWLBb

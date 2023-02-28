@@ -20,6 +20,7 @@ mod phantom;
 use phantom::{solana, ConnectResponse};
 
 fn main() {
+    println!("hello");
     wasm_logger::init(wasm_logger::Config::default());
     dioxus_web::launch(web_app);
 }
